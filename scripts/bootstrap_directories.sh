@@ -11,6 +11,9 @@ COMM=communication;
 LEARNING=learning;
 # DIRS=resources/{$TESTS,$TOOLS,$AGILE,$SD,$COMM,$LEARNING}
 
+## PUBPLIC DIRECTORY
+mkdir public
+
 ## TESTS DIRECTORY
 mkdir -p resources/tests/{tdd,tfp,headless-browser-testing,visual-regression-testing};
 
