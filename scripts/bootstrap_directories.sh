@@ -32,3 +32,5 @@ mkdir -p resources/communication
 ## LEARNING
 mkdir -p resources/learning
 
+## Create Readme files
+find resources/ -type d -exec touch {}/README.md \;
