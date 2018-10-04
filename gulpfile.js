@@ -1,17 +1,43 @@
 const gulp = require('gulp');
 const del = require('del');
-var index = require('gulp-index');
+const index = require('gulp-index');
+const jest = require('gulp-jest').default;
+const insertSpaces = require('./src/insertSpaces');
 
 gulp.task('clean', function() {
-  return del(['dist']);
+  return del(['public/index.html']);
 });
 
-gulp.task('build:HTML', function({
-  relativePath: './src/client',
-}) {
-  return gulp.src('./posts/*.md')
-    .pipe(index())
-    .pipe(gulp.dest('./dist'));
+gulp.task('test', function() {
+  return gulp.src('__tests__').pipe(jest());
 });
 
-gulp('default', ['build:HTML']);
+// see https://github.com/lee-chase/gulp-index#readme for options
+
+gulp.task('html:buildIndex', function() {
+  return gulp.src('./public/*.md')
+    .pipe(index({
+      'prepend-to-output': () => `<head>
+        <meta title="Yet on other blog hosted on here" />
+        <base href="/yabhoh/" />
+    </head>
+    <body>`,
+      'append-to-output': () => '</body>',
+      'title': 'Welcome',
+      'title-template': (title) =>`<h1>${title}</h1>`,
+      'list-template': (listContent) => `<ul>${listContent}</ul>`,
+      'item-template': (filepath, filename) => {
+        const removeFileType = (str) => str.replace(/.md$/,'');
+        const href = removeFileType(filepath + '/' + filename);
+        const text = insertSpaces(filename);
+        return `<li><a href="${href}">${text}</a></li>`;
+      },
+      outputFile: './index.html',
+      'tab-depth': 0,
+      'tab-string': '  ',
+      relativePath: './public/',
+  }))
+    .pipe(gulp.dest('./public'));
+});
+
+gulp.task('default', ['test', 'html:buildIndex']);
