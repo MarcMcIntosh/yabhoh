@@ -1,0 +1,20 @@
+{
+  "name": "yabhoh",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Yet another blog hosted on here",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcMcIntosh/yabhoh.git"
+  },
+  "author": "Marc McIntosh <marcmcintosh1987@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MarcMcIntosh/yabhoh/issues"
+  },
+  "homepage": "https://github.com/MarcMcIntosh/yabhoh#readme"
+}
