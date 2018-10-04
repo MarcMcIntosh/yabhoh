@@ -11,4 +11,4 @@ deploy:
   local-dir: public
   on:
     # Add your branch here
-    # branch: master
+    branch: marc
