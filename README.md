@@ -15,5 +15,6 @@ and add it to the environment variables on https://travis-ci.org under the yabho
 
 
 ## Directory layout
-- __public__: is the hosted content. Your content :)
+- __posts__: is the hosted content. Your content :)
 - __resources__: is a collection of resources organised by topics for blogging about or casual interest. Additions are most welcome.
+- __dist__: Is the public facing directory.
