@@ -3,6 +3,7 @@ const del = require('del');
 const index = require('gulp-index');
 const jest = require('gulp-jest').default;
 const insertSpaces = require('./src/insertSpaces');
+const formatFileUrl = require('./src/formatFileUrl');
 
 gulp.task('clean', function() {
   return del(['public/index.html']);
@@ -25,12 +26,13 @@ gulp.task('html:buildIndex', function() {
       'append-to-output': () => '</body>',
       'title': 'Welcome',
       'title-template': (title) =>`<h1>${title}</h1>`,
-      'list-template': (listContent) => `<ul>${listContent}</ul>`,
+      // 'list-template': (listContent) => `<ul>${listContent}</ul>`,
+      'section-heading-template': () => '',
       'item-template': (filepath, filename) => {
-        const removeFileType = (str) => str.replace(/.md$/,'');
-        const href = removeFileType(filepath + '/' + filename);
-        const text = insertSpaces(filename);
-        return `<li><a href="${href}">${text}</a></li>`;
+        const href = formatFileUrl(filepath, filename);
+        const text = insertSpaces(formatFileUrl('', filename));
+        return `<li><a href="${href}">${text}</a></li>
+        `;
       },
       outputFile: './index.html',
       'tab-depth': 0,
