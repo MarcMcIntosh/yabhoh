@@ -1,0 +1,14 @@
+language: node_js
+deploy:
+  provider: pages
+  skip-cleanup: true
+  # Set in the settings page of your repository, as a secure variable
+  # See https://github.com/settings/tokens to create a token
+  # and set it as an eviroment variable i the settings tab on travis-ci.org
+  # ie: https://travis-ci.org/[USERNAME]/yabhoh/settings
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  local-dir: public
+  on:
+    # Add your branch here
+    branch: marc
