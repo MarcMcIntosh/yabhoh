@@ -6,11 +6,15 @@ Markdown files in the public directory will be hosted and rendered by github aut
 
 ### Set-up
 Fork this repository
-Create your own branch
+Create your own branch,
 Delete or edit the file public/.gitignore
-On the repository settings page on git hub enable pages for your branch
-Generate a token here https://github.com/settings/tokens
 Copy example-travis.yml to .travis.yml
+### Travis
+Go to https://travis-ci.org and login
+find the repository, and select your branch.
+***note*** if you can not find your branch you may have to enable travis on your copy the master first.
+### Git-hub token
+Generate a token here https://github.com/settings/tokens
 and add it to the environment variables on https://travis-ci.org under the yabhoh/settings tab.
 
 
