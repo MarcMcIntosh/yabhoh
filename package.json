@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/MarcMcIntosh/yabhoh#readme",
   "dependencies": {
+    "del": "^3.0.0",
     "gulp": "^3.9.1",
-    "gulp-cli": "^2.0.1"
+    "gulp-cli": "^2.0.1",
+    "gulp-index": "^0.2.0"
   }
 }
