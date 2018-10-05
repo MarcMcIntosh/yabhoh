@@ -11,7 +11,7 @@ deploy:
   # ie: https://travis-ci.org/[USERNAME]/yabhoh/settings
   github-token: $GITHUB_TOKEN
   keep-history: true
-  local-dir: public
+  local-dir: dist
   on:
     # Add your branch here
     # branch: master

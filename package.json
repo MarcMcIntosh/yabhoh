@@ -5,7 +5,7 @@
   "description": "Yet another blog hosted on here",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 0"
+    "test": "gulp"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,13 @@
   "bugs": {
     "url": "https://github.com/MarcMcIntosh/yabhoh/issues"
   },
-  "homepage": "https://github.com/MarcMcIntosh/yabhoh#readme"
+  "homepage": "https://github.com/MarcMcIntosh/yabhoh#readme",
+  "dependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-cli": "^2.0.1",
+    "gulp-index": "^0.2.0",
+    "gulp-jest": "^4.0.2",
+    "jest-cli": "^23.6.0"
+  }
 }
