@@ -29,5 +29,5 @@ There are a few surveys one can take or observations to be made to assess a lear
 + [http://vark-learn.com/the-vark-questionnaire/]
 + [http://www.nwlink.com/~donclark/hrd/styles/vak.html]
 
-## Note
+### Note
 VAK and VARK are generally useful and easy to mass apply, although edge cases that effect an individuals ability to learn such as natural interests will also to engage with learning materials/activities.
