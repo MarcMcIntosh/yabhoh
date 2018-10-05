@@ -1,26 +1,28 @@
-# Learning Models: VAK
-Barbe's VAK also know as or modality theory has the core concept that a persons optimal learning style can be measured by using three distinct categories. There are visual, Aural/Auditory and Kinesthetic/Tactile.
-+ __Visually-dominant__ learners best absorb information through
-reading, writing and usage of graphs and charts.
-+  __Aural-dominant__ learners gain the most from listening and discussing... occasionally talking to them self.
-+ __Kinesthetic-dominant__ people prefer a hands on approach, learning through first hand experience.
+# Learning Models: VAK/VARK
+Barbe's VAK also know as or modality theory has the core concept that a persons optimal learning style can be measured by using three distinct categories. There are visual, Aural/Auditory and Kinaesthetic/Tactile.
 
-> The VARK model consists reading and writing dominant people a different category
-https://www.mindtools.com/pages/article/vak-learning-styles.htm
+| Style | Description |
+| --- | --- |
+| Visually-dominant | Absorbs information through reading, writing and usage of graphs, charts and pictures |
+| Aural-dominant | Gains the most from listening and discussing... occasionally talking to them self |
+| Kinaesthetic-dominant | Prefer a hands on approach, learning through first hand experience |
+
+The Neil Fleming's VARK model extends upon the VAK by considering reading and writing to be it's own separate category. [source] (https://www.verywellmind.com/vark-learning-styles-2795156)
+
 > Further information
 + http://tracyharringtonatkinson.com/barbes-vak-learning-style/
 + https://en.wikipedia.org/wiki/Learning_styles#Learning_modalities
 + https://web.archive.org/web/20150314235648/http://vark-learn.com/introduction-to-vark/the-vark-modalities/
++ https://www.mindtools.com/pages/article/vak-learning-styles.htm
 
+## Mixed Modalities (MM)
+Most people are a mix of learning styles. A quote attributed to Confucius and incorrectly translated provided a good example of this. [source](https://english.stackexchange.com/questions/226886/origin-of-i-hear-and-i-forget-i-see-and-i-remember-i-do-and-i-understand)
 
-## Most people are a mix off these categories
+> *I hear and I forget*
+> *I see and I remember*
+> *I do and I understand*
 
-A quote attributed to Confucius and incorrectly translated provided a good example of this. [source](https://english.stackexchange.com/questions/226886/origin-of-i-hear-and-i-forget-i-see-and-i-remember-i-do-and-i-understand)
-> I hear and I forget
-> I see and I remember
-> I do and I understand
-
-Would give the impression that the writer was a mix Kinesthetic-dominant and visually-dominant.
+Would give the impression that the writer is kinaesthetic-dominant with some some capability for visual learning as-well.
 
 ## Assessment methods
 There are a few surveys one can take or observations to be made to assess a learners capabilities
