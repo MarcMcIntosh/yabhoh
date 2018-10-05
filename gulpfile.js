@@ -26,7 +26,7 @@ gulp.task('html:buildIndex', function() {
       'append-to-output': () => '</body>',
       'title': 'Welcome',
       'title-template': (title) =>`<h1>${title}</h1>`,
-      // 'list-template': (listContent) => `<ul>${listContent}</ul>`,
+      'list-template': (listContent) => `<ul>${listContent}</ul>`,
       'section-heading-template': () => '',
       'item-template': (filepath, filename) => {
         const href = formatFileUrl(filepath, filename);
