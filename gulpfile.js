@@ -42,4 +42,4 @@ gulp.task('html:buildIndex', function() {
     .pipe(gulp.dest('./public'));
 });
 
-gulp.task('default', ['test', 'html:buildIndex']);
+gulp.task('default', gulp.series('test', 'html:buildIndex'));
