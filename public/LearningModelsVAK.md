@@ -9,7 +9,7 @@ Barbe's VAK also know as or modality theory has the core concept that a persons 
 
 The Neil Fleming's VARK model extends upon the VAK by considering reading and writing to be it's own separate category. [source] (https://www.verywellmind.com/vark-learning-styles-2795156)
 
-> Further information
+## Further information
 + [http://tracyharringtonatkinson.com/barbes-vak-learning-style/]
 + [https://en.wikipedia.org/wiki/Learning_styles#Learning_modalities]
 + [https://web.archive.org/web/20150314235648/http://vark-learn.com/introduction-to-vark/the-vark-modalities/]
