@@ -12,3 +12,12 @@ The advantages to this approach is having multiple people working on a task coll
 Form what I've read online, mob programming not only works but is fun, I'll update this tomorrow when I find out :)
 
 [1]: http://mobprogramming.org/mob-programming-your-way/#more-334
+
+## Update
+Today we spent one hour working through the [mars rover kata](http://kata-log.rocks/mars-rover-kata) using a mob programming style with a few additional rules applied. These rules were:
++ The addition of a commander role, who was the only person who could tell the person typing what to do.
++ Other persons who were not the driver or commander had to phrase their input as questions.
+
+It was a small difference, but I suspect the impact was noticeable as the rules formed a barrier to engagement that other wise would have not been there. Comparatively the retro-scope afterwards did not have these rules and every one voiced an opinion. With the resulting conversations and discussions lasting as long as the kata.
+
+Next time I would like try mob programming with out addition rules to see the results.  
