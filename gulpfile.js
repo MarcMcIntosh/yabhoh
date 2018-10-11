@@ -27,7 +27,10 @@ gulp.task('html:buildIndex', function() {
       'title': 'Welcome',
       'title-template': (title) =>`<h1>${title}</h1>`,
       'list-template': (listContent) => `<ul>${listContent}</ul>`,
-      'section-heading-template': () => '',
+      'section-heading-template': (heading) => {
+        if (!heading) return '';
+        return `<section>${heading}</section>`;
+      },
       'item-template': (filepath, filename) => {
         const href = formatFileUrl(filepath, filename);
         const text = insertSpaces(formatFileUrl('', filename));
