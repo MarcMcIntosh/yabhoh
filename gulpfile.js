@@ -33,7 +33,7 @@ gulp.task('html:buildIndex', function() {
       },
       'item-template': (filepath, filename) => {
         const href = formatFileUrl(filepath, filename);
-        const text = insertSpaces(formatFileUrl('', filename));
+        const text = insertSpaces(href);
         return `<li><a href="${href}">${text}</a></li>
         `;
       },
