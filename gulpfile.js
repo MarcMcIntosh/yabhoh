@@ -41,6 +41,7 @@ gulp.task('html:buildIndex', function() {
       'tab-depth': 0,
       'tab-string': '  ',
       relativePath: './public/',
+      'pathDepth': 2,
   }))
     .pipe(gulp.dest('./public'));
 });
