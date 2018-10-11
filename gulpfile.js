@@ -29,7 +29,8 @@ gulp.task('html:buildIndex', function() {
       'list-template': (listContent) => `<ul>${listContent}</ul>`,
       'section-heading-template': (heading) => {
         if (!heading) return '';
-        return `<section>${heading}</section>`;
+        const formatedHeading = insertSpaces(heading);
+        return `<section>${formatedHeading}</section>`;
       },
       'item-template': (filepath, filename) => {
         const href = formatFileUrl(filepath, filename);
