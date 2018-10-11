@@ -33,12 +33,13 @@ gulp.task('html:buildIndex', function() {
       },
       'item-template': (filepath, filename) => {
         const href = formatFileUrl(filepath, filename);
-        const text = insertSpaces(href);
+        const nameWithOutPath = formatFileUrl('', filename);
+        const text = insertSpaces(nameWithOutPath);
         return `<li><a href="${href}">${text}</a></li>
         `;
       },
       outputFile: './index.html',
-      'tab-depth': 0,
+      'tab-depth': 1,
       'tab-string': '  ',
       relativePath: './public/',
       'pathDepth': 1,
