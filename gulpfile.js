@@ -8,22 +8,27 @@ const formatFileUrl = require('./src/formatFileUrl');
 
 
 // loading reveal
-const RevealJsIndexPath = require.resolve('reveal.js');
-const RevealJsDirectory = path.resolve(RevealCssPath, '..', '..') + '**/*.(css,js,eot,ttf,woff)';
-gulp.task('reveal:js', function() {
-  return gulp.src(RevealJsIndexPath).pipe(gulp.dest('public/assets/reveal/js/reveal.js'));
-});
+function genRevealTask(str) {
+  const RevealJsIndexPath = require.resolve('reveal.js');
+  const RevealJsDirectory = path.resolve(RevealJsIndexPath, '..', '..');
 
-// Assets
-gulp.task('assets', function(done) {
-  gulp.parallel('reveal:js');
-  done()
-});
+  return function() {
+    const glob = path.join(RevealJsDirectory, str, '**', '*.*');
+    const dest = path.join('public/assets/reveal', str);
+    return gulp.src(glob).pipe(gulp.dest(dest));
+  }
+}
+// Could these params be an array?
+gulp.task('reveal:js', genRevealTask('js'));
+gulp.task('reveal:css', genRevealTask('css'));
+gulp.task('reveal:lib', genRevealTask('lib'));
+gulp.task('reveal:plugin', genRevealTask('plugin'));
+
 /*
 gulp.task('reveal:css', function)
 */
 gulp.task('clean', function() {
-  return del(['public/index.html', 'public/assets/**/*.*']);
+  return del(['public/index.html', 'public/assets/*']);
 });
 
 gulp.task('test', function() {
@@ -65,4 +70,4 @@ gulp.task('html:buildIndex', function() {
     .pipe(gulp.dest('./public'));
 });
 
-gulp.task('default', gulp.series('clean', 'test', 'html:buildIndex', 'reveal:js'));
+gulp.task('default', gulp.series('clean', 'test', 'html:buildIndex', gulp.parallel('reveal:js', 'reveal:css', 'reveal:lib', 'reveal:plugin')));
