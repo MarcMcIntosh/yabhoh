@@ -16,7 +16,7 @@ gulp.task('test', function() {
 // see https://github.com/lee-chase/gulp-index#readme for options
 
 gulp.task('html:buildIndex', function() {
-  return gulp.src('./public/**/*.md')
+  return gulp.src('./public/**/*.?(md|html)')
     .pipe(index({
       'prepend-to-output': () => `<head>
         <meta title="Yet on other blog hosted on here" />
