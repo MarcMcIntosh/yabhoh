@@ -5,3 +5,4 @@
 - [x] Add a test.md in public directory
 - [x] Automatically generate an index with a link to test.md
 - [x] Allow directory listings in public
+- [ ] Add a presentation frame work
