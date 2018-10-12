@@ -1,12 +1,29 @@
 const gulp = require('gulp');
+const path = require('path');
 const del = require('del');
 const index = require('gulp-index');
 const jest = require('gulp-jest').default;
 const insertSpaces = require('./src/insertSpaces');
 const formatFileUrl = require('./src/formatFileUrl');
 
+
+// loading reveal
+const RevealJsIndexPath = require.resolve('reveal.js');
+const RevealJsDirectory = path.resolve(RevealCssPath, '..', '..') + '**/*.(css,js,eot,ttf,woff)';
+gulp.task('reveal:js', function() {
+  return gulp.src(RevealJsIndexPath).pipe(gulp.dest('public/assets/reveal/js/reveal.js'));
+});
+
+// Assets
+gulp.task('assets', function(done) {
+  gulp.parallel('reveal:js');
+  done()
+});
+/*
+gulp.task('reveal:css', function)
+*/
 gulp.task('clean', function() {
-  return del(['public/index.html']);
+  return del(['public/index.html', 'public/assets/**/*.*']);
 });
 
 gulp.task('test', function() {
@@ -48,4 +65,4 @@ gulp.task('html:buildIndex', function() {
     .pipe(gulp.dest('./public'));
 });
 
-gulp.task('default', gulp.series('clean', 'test', 'html:buildIndex'));
+gulp.task('default', gulp.series('clean', 'test', 'html:buildIndex', 'reveal:js'));
