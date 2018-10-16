@@ -6,5 +6,4 @@
 + <https://www.agilealliance.org/glossary/mob-programming>
 + <http://mobprogramming.org/mob-programming-your-way/#more-334>
 + <https://www.agilealliance.org/resources/experience-reports/mob-programming-agile2014/>
-Note mobbing with a commander, sort of works.
-Try mobbing with out a commander.
++ <https://leanpub.com/mobprogrammingguidebook>
