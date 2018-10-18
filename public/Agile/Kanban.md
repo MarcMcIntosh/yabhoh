@@ -1,6 +1,6 @@
 # Kanban: in-brief
 
-As complicated as the [wikipedia](https://en.wikipedia.org/wiki/Kanban_(development) article would make it seem. A Kansan can be implemented with some sticky notes a pen and enough space to put the notes on.
+As complicated as the [wikipedia](<https://en.wikipedia.org/wiki/Kanban_(development)>) article would make it seem. A Kansan can be implemented with some sticky notes a pen and enough space to put the notes on.
 
 The layout is a table, with stage along the y axis with one Colum representing a unique stage columns and the x axis representing priority level (the high up the higher the priority), as the following table illustrates.
 

@@ -1,8 +1,8 @@
 # Mikado Method
 
-In short the mikado method is a way to organise a complex series of tasks that have many interlinked co-dependencies. Similar to the game (mikado)[https://en.wikipedia.org/wiki/Mikado_(game)] the method involves working of the tasks with least dependencies until the task is complete.
+In short the mikado method is a way to organise a complex series of tasks that have many interlinked co-dependencies. Similar to the game (mikado)[<https://en.wikipedia.org/wiki/Mikado_(game)>] the method involves working of the tasks with least dependencies until the task is complete.
 
-Most resources I've found talk about using this method in a large code base, (1)[https://manning-content.s3.amazonaws.com/download/3/558b9be-92a7-4ebf-90ba-c7fdd830aea7/MikadoMethod_CH01.pdf], (2)[http://www.methodsandtools.com/archive/mikado.php], (3)[http://mikadomethod.info/>]. Although I was recently shown this method can also be applied to other activities in-order to make life easier :)
+Most resources I've found talk about using this method in a large code base, [1](https://manning-content.s3.amazonaws.com/download/3/558b9be-92a7-4ebf-90ba-c7fdd830aea7/MikadoMethod_CH01.pdf), [2](http://www.methodsandtools.com/archive/mikado.php), [3](http://mikadomethod.info/). Although I was recently shown this method can also be applied to other activities in-order to make life easier :)
 
 Here's my understanding of the process write drawn goals / large tasks using a check list.  like so,
 + [ ] Task 1
