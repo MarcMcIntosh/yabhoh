@@ -59,6 +59,7 @@ Use the following technologies:
 + [ ] When an item is updated while in a filtered state, it should be updated accordingly. E.g. if the filter is `Active` and the item is checked, it should be hidden.
 + [ ] Make sure the active filter is persisted on reload.
 
+
 ## What could have gone better
 
 As the project was hosted on github and the turn around time from pushing to publishing could take a minute or two a lot of time was wasted on typos, and syntax errors that would normally be caught with a linter.
@@ -68,6 +69,15 @@ The comment log is at the bottom of the page and it shows how often, typos and c
 Given how often this was going to happen I made the early decision to use todomvc's css, if I got the JavaScript side of the app done I could then remove the css and spend endless hours tweaking the style sheets in the browser until it worked again. Thankfully I never got that far.
 
 Honestly, I would normally use a css processor and linter to reduce avoidable mistakes.   
+
+### Goal 1: Finish the task
+No, the task is not done... looking at the restrictions put in place, this was not meant to be unachievable.
+
+### Goal 2: plan and track the progress
+Could have been better, as  i frequently had to revisit code I wrote and change it due to errors and poor implementation practices... honestly I recon a user could write a script tag in the input and execute it. On the bright side progress was tracked :)
+
+### Goal 3: stay focused on this one task throughout the week.
+I only did a few other activities, they where worth the small amount of time they consumed.
 
 ## Commit log
 Generate using
