@@ -31,3 +31,10 @@ doThingWith(ticksWithText);
 
 Small difference, but I thought it was interesting as it's the same result but much simpler to write.
 Although the first example maybe a habit I picked up from using immutable data practises in JavaScript.
+
+### Other articles about pairing
+Stuff i was planning to rip-off ;)
++ <http://www.extremeprogramming.org/rules/pair.html>
++ <https://stackify.com/pair-programming-advantages/>
++ <https://blog.codinghorror.com/pair-programming-vs-code-reviews/>
++ <https://resources.collab.net/agile-101/pair-programming>
