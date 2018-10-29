@@ -23,5 +23,4 @@ It was a small difference, but I suspect the impact was noticeable as the rules 
 Next time I would like try mob programming with out addition rules to see the results.  
 
 ## Update: 2
-So this time the same kata was attempted, in a different language *scala* this time but with out the commander role.
-It was a-lot more engaging and an enjoyable way to send an hour in the afternoon. :)
+So a week or so later the same kata was attempted, with different people in a different programming language *scala*  and this time with out the commander role. Overall it was a-lot more engaging and an enjoyable way to send an hour in the afternoon. :)
