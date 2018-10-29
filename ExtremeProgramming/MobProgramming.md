@@ -13,7 +13,7 @@ Form what I've read online, mob programming not only works but is fun, I'll upda
 
 [1]: http://mobprogramming.org/mob-programming-your-way/#more-334
 
-## Update
+## Update: 1
 Today we spent one hour working through the [mars rover kata](http://kata-log.rocks/mars-rover-kata) using a mob programming style with a few additional rules applied. These rules were:
 + The addition of a commander role, who was the only person who could tell the person typing what to do.
 + Other persons who were not the driver or commander had to phrase their input as questions.
@@ -21,3 +21,7 @@ Today we spent one hour working through the [mars rover kata](http://kata-log.ro
 It was a small difference, but I suspect the impact was noticeable as the rules formed a barrier to engagement that other wise would have not been there. Comparatively the retro-scope afterwards did not have these rules and every one voiced an opinion. With the resulting conversations and discussions lasting as long as the kata.
 
 Next time I would like try mob programming with out addition rules to see the results.  
+
+## Update: 2
+So this time the same kata was attempted, in a different language *scala* this time but with out the commander role.
+It was a-lot more engaging and an enjoyable way to send an hour in the afternoon. :)
