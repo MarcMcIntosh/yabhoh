@@ -14,6 +14,9 @@ Brace yourself for acronyms with in acronyms... (acronym-ception)?
 Single Responsibility Principle or SPR of short, in from what I've read online [1][2][3]
 a function / class should only do one thing. For example if part of the code should return some numbers and then produce the out-put as formatted text: 1 = '1rst', 2 = '2nd', 3 = '3rd'... then there should be atleast to functions one to generate the numbers and the other to format them.
 
+##### Easy mode
+**Do one thing and Do it well** --*(unix philosophy)[https://en.wikipedia.org/wiki/Unix_philosophy]*
+
 Why?... modularity. If change to the input or output is needed then only the relevant function needs to be changed, this also allows functions to be chained which is a much more flexible approach to writing one large function / class that has several procedures with in it. Using SRP Each procedure becomes a single function / class in it's existing in it's own context ( of file ).
 
 ```js
