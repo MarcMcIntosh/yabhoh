@@ -5,4 +5,5 @@
 - [x] Add a test.md in public directory
 - [x] Automatically generate an index with a link to test.md
 - [x] Allow directory listings in public
-- [ ] Add a presentation frame work
+- [x] Add a presentation frame work
+- [ ] Ahve the index page sorted, by most recently updated... similar to a directory layout
