@@ -106,3 +106,21 @@ There are a few interpretations of the original [article](http://www.cs.cmu.edu/
 + *All this is stating is that every subclass/derived class should be substitutable for their base/parent class.* -- [c ramirez](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
 
 A more simple way of thinking about this is to the inherited prototypes / methods should still work the same way for a derived instance ( child ) as the method the did for the parent.
+
+```js
+class Animal {
+  constructor(name) { this.name = name; }
+  speak() { return this.name + ' makes a noise.'; }
+}
+
+class Dog extends Animal {
+  constructor(name) { super(name); }
+  bark() { return this.name + ' barks.'); }
+}
+
+const Felix = new Animal('Felix');
+const Doug = new Dog('Doug');
+
+
+Doug.prototype.speak.call(Felix) === Felix.speak(); // true
+```
