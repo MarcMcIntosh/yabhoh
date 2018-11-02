@@ -95,5 +95,14 @@ new Date(0).toString();
 ```
 And more, the thing to take note of in respects to OCP, is that each of these are instances of an object, and have a toString method that works slightly differently and these differences do not modify the toString method of object constructor, but provide their own specialised version of the toString() method.
 
-In practice
-such as when interacting with the dom, abstractions could also implement a toString method that returns a dom string.
+In practice, such as when interacting with the dom, abstractions could also implement a toString method that returns a dom string.
+
+### L
+Liskov Substitution Principle (LSP)
+
+There are a few interpretations of the original [article](http://www.cs.cmu.edu/afs/cs/project/calder/www/fmdp.html)
++ *... The objects of subtype ought to behave the same as those of the supertype as far as anyone or any program using the supertype objects can tell.* -- [c2 wiki](http://wiki.c2.com/?LiskovWingSubtyping)
++ *Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T.*
++ *All this is stating is that every subclass/derived class should be substitutable for their base/parent class.* -- [c ramirez](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
+
+A more simple way of thinking about this is to the inherited prototypes / methods should still work the same way for a derived instance ( child ) as the method the did for the parent.
