@@ -15,3 +15,5 @@ D - Dependency Inversion Principle
 + <https://hackernoon.com/solid-principles-made-easy-67b1246bcdf>
 
 + <https://medium.com/javascript-scene/master-the-javascript-interview-what-s-the-difference-between-class-prototypal-inheritance-e4cd0a7562e9>
+
++ <http://wiki.c2.com/?PrinciplesOfObjectOrientedDesign>
