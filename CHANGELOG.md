@@ -6,4 +6,4 @@
 - [x] Automatically generate an index with a link to test.md
 - [x] Allow directory listings in public
 - [x] Add a presentation frame work
-- [ ] Ahve the index page sorted, by most recently updated... similar to a directory layout
+- [ ] Ahve the index page sorted, by most recently updated... similar to a directory layout: this required moveing posts to their own directory.
