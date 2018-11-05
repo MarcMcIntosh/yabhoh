@@ -31,6 +31,10 @@ gulp.task('clean', function() {
   return del(['public/index.html', 'public/assets/*']);
 });
 
+gulp.task('move:posts', function() {
+	return gulp.src('posts/**/*').pipe(gulp.dest('public'));
+});
+
 gulp.task('test', function() {
   return gulp.src('__tests__').pipe(jest());
 });
@@ -70,4 +74,4 @@ gulp.task('html:buildIndex', function() {
     .pipe(gulp.dest('./public'));
 });
 
-gulp.task('default', gulp.series('clean', 'test', 'html:buildIndex', gulp.parallel('reveal:js', 'reveal:css', 'reveal:lib', 'reveal:plugin')));
+gulp.task('default', gulp.series('clean', 'move:posts', 'test', 'html:buildIndex', gulp.parallel('reveal:js', 'reveal:css', 'reveal:lib', 'reveal:plugin')));
