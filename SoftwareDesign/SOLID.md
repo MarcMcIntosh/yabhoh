@@ -105,7 +105,7 @@ There are a few interpretations of the original [article](http://www.cs.cmu.edu/
 + *Let q(x) be a property provable about objects of x of type T. Then q(y) should be provable for objects y of type S where S is a subtype of T.*
 + *All this is stating is that every subclass/derived class should be substitutable for their base/parent class.* -- [c ramirez](https://medium.com/@cramirez92/s-o-l-i-d-the-first-5-priciples-of-object-oriented-design-with-javascript-790f6ac9b9fa)
 
-A more simple way of thinking about this is to the inherited prototypes / methods should still work the same way for a derived instance ( child ) as the method the did for the parent.
+A more simple way of thinking about this is to the inherited prototypes / methods should still work the same way for a derived instance ( child ) when called on the parent.
 
 ```js
 class Animal {
@@ -115,12 +115,64 @@ class Animal {
 
 class Dog extends Animal {
   constructor(name) { super(name); }
-  bark() { return this.name + ' barks.'); }
+  bark() { return this.name + ' barks.'; }
 }
 
 const Felix = new Animal('Felix');
 const Doug = new Dog('Doug');
 
 
-Doug.prototype.speak.call(Felix) === Felix.speak(); // true
+Doug.bark() // 'Doug barks';
+Doug.bark.call(Felix) // Felix Barks.
+
+Dog.prototype.speak.call(Felix) === Felix.speak(); // true
+```
+
+### I
+Interface Segregation Principle ([ISP](http://wiki.c2.com/?InterfaceSegregationPrinciple)).
+This is philosophy that it is better to have many small compossible interfaces / methods that can be re-used as needed.
+
+```js
+
+// Reusable interfaces
+function speak() { return this.name + 'makes a noise'; }
+function meow() { return this.name + ' meow' ;}
+function purr() { return this.name + ' purr' ;}
+function hunt() { return this.name + ' hunts';}
+function roar() { return this.name + ' goes RAWR!'}
+
+class Animal {
+  constructor(name) {
+    this.name = name;
+    this.speak = speak.bind(this);
+  }
+}
+
+class HouseCat extends Animal {
+  constructor(name) {
+    super(name)
+    this.meow = meow.bind(this);
+    this.purr = purr.bind(this);
+  }
+}
+
+class FarmCat extends HouseCat {
+  constructor(name) {
+    super(name);
+    this.hunt = hunt.bind(this);
+  }
+}
+
+class BigCat extends Animal {
+  constructor(name) {
+    super(name);
+    this.roar = roar.bind(this);
+    this.hunt = hunt.bind(this);
+  }
+}
+
+const Simba = new BigCat('Simba');
+
+Simba.speak() // Simba makes a noise
+Simba.roar() // Simabe goes RAWR;
 ```
