@@ -199,8 +199,6 @@ d3.select(".axis").call(d3.axisBottom(x));
 The subtle changes happened throughout the library and most of my previous work required to be entirely rewritten to accommodate these changes. In hindsight, writing abstractions around the functionality required from the library would have enabled most of the work to be salvaged.
 
 ### SOLID Summary
-
-To sumarise this SOLID princables.
 ##### Single Responsibility Principle
 Do one thing
 ##### Open closed principle
