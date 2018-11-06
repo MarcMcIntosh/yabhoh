@@ -130,7 +130,7 @@ Dog.prototype.speak.call(Felix) === Felix.speak(); // true
 
 ### I
 Interface Segregation Principle ([ISP](http://wiki.c2.com/?InterfaceSegregationPrinciple)).
-This is philosophy that it is better to have many small compossible interfaces / methods that can be re-used as needed.
+It is better to have many small compossible interfaces / methods that can be re-used as needed.
 
 ```js
 
@@ -176,3 +176,38 @@ const Simba = new BigCat('Simba');
 Simba.speak() // Simba makes a noise
 Simba.roar() // Simabe goes RAWR;
 ```
+This is a similar principle to modularity where large piece of code are created out of many smaller re-usable parts. I would imagine that there could be some pitfalls when a of the module is modified, which leads on to the next Acronym of SOLID.
+
+### D
+Dependency Inversion Principle [DIP](http://wiki.c2.com/?DependencyInversionPrinciple)
+>A. High level modules should not depend upon low level modules. Both should depend upon abstractions.
+B. Abstractions should not depend upon details. Details should depend upon abstractions.
+Robert C. Martin
+
+In the above, abstractions for modules could be thought of as thin wrapper functions for a module that a project uses frequently. This is a bit of an investment up-front but in the long run can save time when a module is updated and the api changes, it is much easier to update the small abstractions rather than a large product that relies on the module.
+
+There have been a few situations I can think of where writing short abstractions / wrappers around some desired functionality from a module would have saved alot of time re-writing a code base to deal with updates to a dependency. One in particular that comes to mind is updating graphs written using an early version of [d3](https://github.com/d3/d3/blob/master/CHANGES.md#axes-d3-axis). When before the update axies where written as such:
+
+```js
+d3.select(".axis").call(d3.svg.axis().scale(x).orient("bottom"));
+```
+When the update came out they needed to be written like this:
+```js
+d3.select(".axis").call(d3.axisBottom(x));
+```
+
+The subtle changes happened throughout the library and most of my previous work required to be entirely rewritten to accommodate these changes. In hindsight, writing abstractions around the functionality required from the library would have enabled most of the work to be salvaged.
+
+### SOLID Summary
+
+To sumarise this SOLID princables.
+##### Single Responsibility Principle
+Do one thing
+##### Open closed principle
+avoid modifying modules, try to extend functionality with derived functions / objects.
+##### Liskov substitution principle
+The inherited methods should work constantly.
+##### Interface segregation principle
+Re-usability through extraction.
+##### Dependency Inversion principle
+Use abstractions to interact with dependencies.
