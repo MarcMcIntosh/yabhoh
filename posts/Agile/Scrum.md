@@ -33,9 +33,41 @@ Which are could be confused with the values stated in the [agile manifesto](http
 
 From a software developer point of view that later makes more sense as it's domain specific, although I would have to state good documentation helps understand how something works (or is intended to work) and how to it supposed to be used.
 
+<!--
+### Twelve Principles
+To further muddy waters there are twelve principles. these kind of relate to xp is agile different?
+
+Customer satisfaction through early and continuous software delivery
+Accommodate changing requirements throughout the development process
+Frequent delivery of working software
+Collaboration between the business stakeholders and developers throughout the project
+Support, trust, and motivate the people involved
+Enable face-to-face interactions
+Working software is the primary measure of progress
+Agile processes to support a consistent development pace
+Attention to technical detail and design enhances agility
+Simplicity
+Self-organizing teams encourage great architectures, requirements, and designs
+Regular reflections on how to become more effective
+
++ __Customer satisfaction through early and continuous software delivery__ – Customers are happier when they receive working software at regular intervals, rather than waiting extended periods of time between releases.
++ __Accommodate changing requirements throughout the development process__ – The ability to avoid delays when a requirement or feature request changes.
++ __Frequent delivery of working software__ – Scrum accommodates this principle since the team operates in software sprints or iterations that ensure regular delivery of working software.
++ __Collaboration between the business stakeholders and developers throughout the project__ – Better decisions are made when the business and technical team are aligned.
++ __Support, trust, and motivate the people involved__ – Motivated teams are more likely to deliver their best work than unhappy teams.
++ __Enable face-to-face interactions__ – Communication is more successful when development teams are co-located.
+Working software is the primary measure of progress – Delivering functional software to the customer is the ultimate factor that measures progress.
++ __Agile processes to support a consistent development pace__ – Teams establish a repeatable and maintainable speed at which they can deliver working software, and they repeat it with each release.
++ __Attention to technical detail and design enhances agility__ – The right skills and good design ensures the team can maintain the pace, constantly improve the product, and sustain change.
++ __Simplicity__ – Develop just enough to get the job done for right now.
++ __Self-organizing teams encourage great architectures, requirements, and designs__ – Skilled and motivated team members who have decision-making power, take ownership, communicate regularly with other team members, and share ideas that deliver quality products.
++ __Regular reflections on how to become more effective__ – Self-improvement, process improvement, advancing skills, and techniques help team members work more efficiently.
+-->
+
+
 ## Roles
 
-The value from the guide consistently mention the scrum team, a team is made up of <!-- how many --> distinct roles
+The value from the guide consistently mention the scrum team, a team is made up of three distinct roles, the  __product owner__, the __development team__ and the __scrum master__. The product owner is the person in charge of generating value from the efforts of their team, this is directed by writing and prioritising a backlog (list of items to be done) from which the the development team works from. The development team work on tasks from the backlog in order and work towards the next incremental release of the product. The scum master oversees and guides the scrum process, ensuring good communication and organisation thought the team. 
 
 <!--- ## Events --->
 
