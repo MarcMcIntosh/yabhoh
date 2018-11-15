@@ -67,8 +67,34 @@ Working software is the primary measure of progress – Delivering functional so
 
 ## Roles
 
-The value from the guide consistently mention the scrum team, a team is made up of three distinct roles, the  __product owner__, the __development team__ and the __scrum master__. The product owner is the person in charge of generating value from the efforts of their team, this is directed by writing and prioritising a backlog (list of items to be done) from which the the development team works from. The development team work on tasks from the backlog in order and work towards the next incremental release of the product. The scum master oversees and guides the scrum process, ensuring good communication and organisation thought the team. 
+The value from the guide consistently mention the scrum team, a team is made up of three distinct roles, the  __product owner__, the __development team__ and the __scrum master__. The product owner is the person in charge of generating value from the efforts of their team, this is directed by writing and prioritising a backlog (list of items to be done) from which the the development team works from. The development team work on tasks from the backlog in order and work towards the next incremental release of the product. The scum master oversees and guides the scrum process, ensuring good communication and organisation thought the team.
 
-<!--- ## Events --->
+## Events
+<!-- https://www.scrumguides.org/scrum-guide.html#events -->
+Most if not all events in scrum revolve around the the sprint, a sprint is the work cycle in which the development team starts and finishes work on an incremental release this usually lasts from two weeks to one month. The stages of a sprint including the run-up and run-down events consists of __planning__, the sprint it self, __daily scrum meetings__, __review__, __retrospective__.
 
++ __Sprint planning__ in short this is where the work load for the sprint is calibrated/selected from the backlog.
++ __Daily scrum meetings__ happen during the sprint, this is when the development team discuss the current progress of the current sprint along with individual activities.
++ __Sprint Review__ after the sprint the backlog to updated to reflect the progress of the sprint and/or new requirements.
++ __Retrospective__ the team reflect on the sprint to find potential improvements that can be made for the next sprint.
+
+Once these events / stages have occurred the cycle is ready to start again.
+
+
+
+
+<!--
+The Sprint
+Sprint Planning
+Daily Scrum
+Sprint Review
+Sprint Retrospective
+-->
 <!--- ## Artefacts --->
+<!--
+Product Backlog
+Sprint Backlog
+Increment
+-->
+
+<!-- summary  seems like there is a lot of cross-over with XP -->
