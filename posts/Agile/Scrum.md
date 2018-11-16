@@ -81,20 +81,8 @@ Most if not all events in scrum revolve around the the sprint, a sprint is the w
 Once these events / stages have occurred the cycle is ready to start again.
 
 
+## Artefacts
 
-
-<!--
-The Sprint
-Sprint Planning
-Daily Scrum
-Sprint Review
-Sprint Retrospective
--->
-<!--- ## Artefacts --->
-<!--
-Product Backlog
-Sprint Backlog
-Increment
--->
-
-<!-- summary  seems like there is a lot of cross-over with XP -->
+__Product Backlog__ the list for everything that is need for the product ordered by priority and detail. The more detailed an item is the higher the priority. these details include a description, order (requirements if related to other items), a time estimate, and value such as a user story.
+__Sprint Backlog__ a subset of the product backlog that the developers work on for the duration of a sprint, the items on this list will be the items that the daily scrum meetings will be discussing along with potential improvements.
+__Increment__ An increment is the sum of all of the completed tasks, every increment should deliver additional value.
