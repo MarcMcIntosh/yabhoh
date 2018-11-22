@@ -95,9 +95,8 @@ it(`Takes ${params} and returns £{epxect}`, () => {
 						<h2>Acceptance test <bold>3</bold></h2>
 						<pre><code class="hljs" data-trim contenteditable>
 const wordChain = require('../');
-const expect = ['ruby', 'rubs',
-	'robs', 'rods',
-	'rode', 'code',
+const expect = [
+  'ruby', 'rubs', 'robs', 'rods', 'rode', 'code',
 ];
 const params = ['ruby', 'code'];
 
@@ -111,8 +110,8 @@ it(`Takes ${params} and returns £{epxect}`, () => {
 						<pre><code class="hljs" data-trim contenteditable>
 
 const DICTONARY = [
-  ...['ruby', 'rubs', 'robs',
-	'rods', 'rode', 'code',
+  ...[
+	  'ruby', 'rubs', 'robs', 'rods', 'rode', 'code',
 	],
   ...['lead', 'load', 'goad', 'gold'],
 	...['cat',  'cot', 'cog', 'dog'],
@@ -168,7 +167,7 @@ RangeError: Maximum call stack size exceeded
 				  	</code></pre>
 					</section>
 
-					<section data-background="https://media.giphy.com/media/QiLFiIgj8n3r2/giphy.gif" />
+					<section style="background-size:auto;" data-background="https://media.giphy.com/media/QiLFiIgj8n3r2/giphy.gif" />
 
 				</section>
 
