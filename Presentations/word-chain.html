@@ -58,7 +58,7 @@
 
 				<section>
 					<section>
-						<h2>Asseptance Tests</h2>
+						<h2>Acceptance Tests</h2>
 						<a href="#" class="navigate-down">
 							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
 						</a>
@@ -79,6 +79,8 @@ it(`Takes ${params} and returns £{epxect}`, () => {
 
 					<section>
 						<h2>Acceptance test <bold>2</bold></h2>
+						<pre><code class="hljs" data-trim contenteditable>
+
 const wordChain = require('../');
 const expect = ['lead', 'load', 'goad', 'gold'];
 const params = ['lead', 'gold'];
@@ -86,26 +88,38 @@ const params = ['lead', 'gold'];
 it(`Takes ${params} and returns £{epxect}`, () => {
 	assert.deepEquil(expect, wordChain.apply(null, params);
 });
+						</code></pre>
 					</section>
 
 					<section>
 						<h2>Acceptance test <bold>3</bold></h2>
 						<pre><code class="hljs" data-trim contenteditable>
 const wordChain = require('../');
-const expect = ['ruby', 'rubs', 'robs', 'rods', 'rode', 'code' ];
+const expect = ['ruby', 'rubs',
+	'robs', 'rods',
+	'rode', 'code',
+];
 const params = ['ruby', 'code'];
 
 it(`Takes ${params} and returns £{epxect}`, () => {
 	assert.deepEquil(expect, wordChain.apply(null, params);
 });
 						</code></pre>
+					</section>
+					<section>
 						<h2>Resulting dictonary</h2>
+						<pre><code class="hljs" data-trim contenteditable>
+
 const DICTONARY = [
-  ...['ruby', 'rubs', 'robs', 'rods', 'rode', 'code' ],
+  ...['ruby', 'rubs', 'robs',
+	'rods', 'rode', 'code',
+	],
   ...['lead', 'load', 'goad', 'gold'],
 	...['cat',  'cot', 'cog', 'dog'],
 ]
-					</section>
+					</code></pre>
+
+				</section>
 
 				</section>
 				<!-- Example of nested vertical slides -->
