@@ -263,8 +263,23 @@ module.exports = function walk(startWord, endWord, path = [], depth = 0) {
 					</section>
 
 				</section>
-			<section>
 
+				<section>
+					<h2>Results</h2>
+					<pre><code class="hljs" data-trim contenteditable>
+> word-chain@1.0.0 test /home/marc/Projects/word-chain-kata
+> mocha
+
+Word chain
+  ✓ When given params: cat dog
+	main function should return cat cot cog dog
+  ✓ When given params: lead gold
+  main function should return lead load goad gold
+  ✓ When given params: ruby code
+  main function should return ruby rubs robs rods rode code
+9 passing (14ms)
+					</code></pre>
+				</section>
 			</div>
 
 		</div>
