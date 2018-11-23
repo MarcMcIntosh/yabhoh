@@ -240,8 +240,10 @@ module.exports = function walk(startWord, endWord, path = [], depth = 0) {
 	if (startWord === endWord) { return path; }
 
 	const lastWord = path[path.length - 1];
+
 	const nextWords = hashMap.get(lastWord)
-		.filter(d => path.indexOf(d) === -1);
+		.filter(d => path.indexOf(d) === -1)
+		;
 
 	if(!nextWords.length) { return path; }
 
